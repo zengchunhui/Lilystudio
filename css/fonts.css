@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Optima';
+    src: url('../fonts/optima-webfont.eot');
+    src: url('../fonts/optima-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/optima-webfont.woff2') format('woff2'),
+    url('../fonts/optima-webfont.woff') format('woff'),
+    url('../fonts/optima-webfont.ttf') format('truetype'),
+    url('../fonts/optima-webfont.svg#optimaroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url('../fonts/LetterGothicStd.eot');
+    src: url('../fonts/LetterGothicStd.woff') format('woff'),
+    url('../fonts/LetterGothicStd.ttf') format('truetype'),
+    url('../fonts/LetterGothicStd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
