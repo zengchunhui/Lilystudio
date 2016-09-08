@@ -154,7 +154,7 @@ h6 {
 
 /*about*/
 .about {
-    /*padding: 80px 0;*/
+    padding-bottom: 120px;
     width: 100%;
 }
 .about .head-line {
@@ -171,9 +171,8 @@ h6 {
 /*time-line*/
 .time-line {
     width: 100%;
-    padding: 10px 0 70px;
-    background-image: url(../images/pattern1.png);
-    background-repeat: repeat;
+    padding-bottom: 120px;
+    background-color: #e4e6eb;
 }
 .time-line:before{
     position: absolute;
@@ -272,15 +271,16 @@ h6 {
 /*depart*/
 .depart {
     width: 100%;
-    padding: 80px 0;
     color: #e6e6e6;
     background-color: #2f2e2d;
+    padding-bottom: 120px;
 }
 .depart * {
     color: #e6e6e6;
 }
 .depart .head-line {
-    color: #fefefe;
+    color: #f5f5f5;
+    padding-top: 50px;
 }
 .depart .info {
     text-align: left;
@@ -406,10 +406,10 @@ h6 {
 /*join*/
 .join {
     width: 100%;
-    background-color: #33363c;
+    background-color: #2f2e2d;
 }
 .join .head-line {
-    color: #6ee2d3;
+    color: #f5f5f5;
     padding-top: 50px;
 }
 .join-left, .join-right{
@@ -433,7 +433,7 @@ h6 {
     font-family: "Open Sans","Microsoft Yahei Light", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 14px;
     color: #33363C;
-    background-color: #ddd;
+    background-color: #e6e6e6;
     border: none;
     outline: none;
     resize: none;
@@ -452,13 +452,16 @@ h6 {
     height: 196px;
 }
 .join .submit-btn {
-    margin-top: 30px;
+    width: 120px;
+    height: 50px;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     color: #fff;
     font-size: 20px;
-    background-color: #6ee2d3;
+    z-index: 3;
+    float: right;
+    background-color: #249251;
     -webkit-border-radius: 10px; /* Safari 和 Chrome */
        -moz-border-radius: 10px; /* Firefox */
             border-radius: 10px;
@@ -470,14 +473,25 @@ h6 {
 .join .submit-btn:hover {
     background-color: #b4b4b4;
 }
+.join .submit-btn:after {
+    display: block;
+    width: 90%;
+    height: 1px;
+    margin: 40px auto 0;
+    content: "";
+    color: #ffffff;
+}
 
     /*footer*/
 .footer {
+    display: block;
     width: 100%;
     padding: 30px 0;
+    background-color: #2f2e2d;
 }
 .footer p {
-    color: #6ee2d3;
+    color: #595857;
+    float: right;
 }
 /*others*/
 .clear {
