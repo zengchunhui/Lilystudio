@@ -211,6 +211,7 @@ h6 {
     /*width: 20px;*/
     /*height: 20px;*/
     left: 50%;
+    top: 50%;
     -webkit-border-radius: 10px; /* Safari 和 Chrome */
        -moz-border-radius: 10px; /* Firefox */
             border-radius: 10px;
@@ -224,6 +225,7 @@ h6 {
 .time-line-info {
     position: relative;
     width: 300px;
+    vertical-align: middle;
 }
 .time-line-info h2 {
     line-height: 20px;
@@ -259,6 +261,7 @@ h6 {
 .time-line-image {
     position: absolute;
     text-align: left;
+    vertical-align: middle;
 }
 .tl-image1 {
     left: 55%;
