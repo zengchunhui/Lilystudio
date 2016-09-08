@@ -86,12 +86,12 @@ function updateLogo() {
     var logoSmall = $(".logo-small");
     var navDefault = $(".nav").css("padding-top");
     if (height>40) {
-        $(".nav").css("padding-top","20px").css("opacity",0.9).css("position","fixed");
+        $(".nav").css("padding-top","20px").css("position","fixed");
         logoSmall.removeClass("animated zoomOut");
         logoSmall.addClass("animated zoomIn");
         logoSmall.css("opacity","1");
     }else{
-        $(".nav").css("padding-top",navDefault).css("opacity",1).css("position","absolute");
+        $(".nav").css("padding-top",navDefault).css("position","absolute");
         if (logoSmall.css("opacity") == "1"){
             logoSmall.removeClass("animated zoomIn");
             logoSmall.addClass("animated zoomOut");
@@ -162,5 +162,6 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
     });
+
 });
 
