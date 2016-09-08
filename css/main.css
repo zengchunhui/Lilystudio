@@ -90,9 +90,9 @@ h6 {
 .menu li:hover {
     opacity: 1;
 }
-.active {
+.menu li.active {
     /*border-bottom: solid #6ee2d3 2px;*/
-    color: #ffffff;
+    /*color: #ffffff;*/
     opacity: 1;
     /*-webkit-transition: opacity .3s;*/
        /*-moz-transition: opacity .3s;*/
@@ -138,19 +138,23 @@ h6 {
     vertical-align: middle;
 }
 .wrapper-right{
+    transition: all 0.3s;
+    display: inline-block;
     width: 160px;
     height: 50px;
     margin-left: 3vw;
     line-height: 50px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #249251;
-}
-.wrapper-right a{
-    margin-top: 50%;
+    border: 2px solid #249251;
+    border-radius: 4px;
     font-size: 18px;
     color: #249251;
 }
+.wrapper-right:hover {
+    transition: all 0.3s;
+    background-color: #249251;
+    color: #ffffff;
+}
+
 
 /*about*/
 .about {
@@ -168,30 +172,44 @@ h6 {
 .about .info p{
     color: #808080;
 }
+.head-block-small {
+    margin: 0 auto;
+    width: 200px;
+}
+.head-icon-small {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.head-line-small {
+    color: #666666;
+    display: inline-block;
+    vertical-align: middle;
+}
 /*time-line*/
 .time-line {
     width: 100%;
     padding-bottom: 120px;
     background-color: #e4e6eb;
 }
-.time-line:before{
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 840px;
-    left: 50%;
-    margin-top: 70px;
-    -webkit-transform: translate(-50%,0);
-       -moz-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-         -o-transform: translate(-50%,0);
-            transform: translate(-50%,0);
-    background-color: #6ee2d3;
-}
+/*.time-line:before{*/
+    /*position: absolute;*/
+    /*content: "";*/
+    /*width: 3px;*/
+    /*height: 840px;*/
+    /*left: 50%;*/
+    /*margin-top: 70px;*/
+    /*-webkit-transform: translate(-50%,0);*/
+       /*-moz-transform: translate(-50%,0);*/
+        /*-ms-transform: translate(-50%,0);*/
+         /*-o-transform: translate(-50%,0);*/
+            /*transform: translate(-50%,0);*/
+    /*background-color: #6ee2d3;*/
+/*}*/
 .time-line-dot {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    /*width: 20px;*/
+    /*height: 20px;*/
     left: 50%;
     -webkit-border-radius: 10px; /* Safari 和 Chrome */
        -moz-border-radius: 10px; /* Firefox */
@@ -201,7 +219,7 @@ h6 {
         -ms-transform: translate(-50%,0);
          -o-transform: translate(-50%,0);
             transform: translate(-50%,0);
-    background-color: #6ee2d3;
+    /*background-color: #6ee2d3;*/
 }
 .time-line-info {
     position: relative;
