@@ -12,6 +12,7 @@ html, body, h1, h2, h3, h4, h5, h6, li, ul, p, a, img {
     list-style: none;
 }
 body {
+    overflow-x:hidden;
     background: #fff;
 }
 h1 {
@@ -659,6 +660,9 @@ h1.head-line,h2.head-line-small {
     }
     .banner p {
         margin-top: 1vh;
+    }
+    .wrapper-right {
+        margin-top: 2vh;
     }
     .time-line-node div.time-line-node-info {
         left: 5%;
