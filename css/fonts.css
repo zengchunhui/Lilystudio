@@ -1,20 +1,21 @@
 @font-face {
-    font-family: 'Optima';
-    src: url('../fonts/optima-webfont.eot');
-    src: url('../fonts/optima-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/optima-webfont.woff2') format('woff2'),
-    url('../fonts/optima-webfont.woff') format('woff'),
-    url('../fonts/optima-webfont.ttf') format('truetype'),
-    url('../fonts/optima-webfont.svg#optimaroman') format('svg');
+    font-family: "Helvetica Neue Bold";
+    src: url("../fonts/Helvetica Neue 75 Bold.eot"); /* IE9*/
+    src: url("../fonts/Helvetica Neue 75 Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Helvetica Neue 75 Bold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Helvetica Neue 75 Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/Helvetica Neue 75 Bold.svg#Helvetica Neue 75 Bold") format("svg"); /* iOS 4.1- */
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Letter Gothic Std';
-    src: url('../fonts/LetterGothicStd.eot');
-    src: url('../fonts/LetterGothicStd.woff') format('woff'),
-    url('../fonts/LetterGothicStd.ttf') format('truetype'),
-    url('../fonts/LetterGothicStd.svg') format('svg');
+    font-family: "Helvetica Neue Light";
+    src: url("../fonts/Helvetica Neue 45 Light.eot"); /* IE9*/
+    src: url("../fonts/Helvetica Neue 45 Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Helvetica Neue 45 Light.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Helvetica Neue 45 Light.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/Helvetica Neue 45 Light.svg#Helvetica Neue 45 Light") format("svg"); /* iOS 4.1- */
     font-weight: normal;
     font-style: normal;
 }
