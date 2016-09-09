@@ -63,7 +63,7 @@ function addAnimate() {
 function updateNav() {
     var links = document.querySelectorAll(".menu a")
 
-    for(var i = 0; i < links.length; i++) {
+    for (var i = 0; i < links.length; i++) {
         var link = links[i];
 
         // 获取被链接指向的部分
@@ -72,13 +72,12 @@ function updateNav() {
         var sectionBottom = section.offsetTop + section.clientHeight;
 
         // 检查 window.scrollY 是否在这部分中
-        if(window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-            $(link).addClass("active");
+        if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+            $(link).parent().addClass("active");
         } else {
-            $(link).removeClass("active");
+            $(link).parent().removeClass("active");
         }
     }
-
 }
 
 function updateLogo() {
