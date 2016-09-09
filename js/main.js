@@ -4,16 +4,21 @@
 window.onload = function() {
     navOnClick();
     updateNav();
+    updateTimeLine();
     addAnimate();
     animatedReady();
     navHidden();
-}
+};
 
 window.onscroll = function() {
     updateNav();
     updateLogo();
     animatedReady();
-}
+};
+
+window.onresize = function () {
+    updateTimeLine();
+};
 
 function submit()
 {
@@ -45,12 +50,10 @@ function submit()
 function addAnimate() {
     $(".banner").addClass("animated-ready").attr("href","fadeIn");
     $(".about .icons").addClass("animated-ready").attr("href","fadeIn");
-    $(".time-line-info").addClass("animated-ready").attr("href","fadeIn");
 
-    $(".tl-image1").addClass("animated-ready").attr("href","fadeIn");
-    $(".tl-pc").addClass("animated-ready").attr("href","bounceIn");
-    $(".tl-table").addClass("animated-ready").attr("href","bounceInDown");
-    $(".tl-build").addClass("animated-ready").attr("href","slideInUp");
+    $(".time-line-node-left").addClass("animated-ready").attr("href","fadeInLeft");
+    $(".time-line-node-right").addClass("animated-ready").attr("href","fadeInRight");
+    $(".time-line-node-bottom").addClass("animated-ready").attr("href","fadeInUp");
 
     $(".photo-wrapper").addClass("animated-ready").attr("href","zoomInUp");
     $(".depart .icon-wrapper").addClass("animated-ready").attr("href","zoomIn");
@@ -95,6 +98,21 @@ function updateLogo() {
             logoSmall.removeClass("animated zoomIn");
             logoSmall.addClass("animated zoomOut");
         }
+    }
+}
+
+function updateTimeLine() {
+    var width = window.innerWidth;
+    if(width < 768) {
+        $(".time-line-node-info").removeClass('time-line-node-left').removeClass('time-line-node-bottom').addClass('time-line-node-right');
+    } else {
+        $(".time-line-node-info").each(function (index, info) {
+            if(index == $(".time-line-node-info").length-1) {
+                $(info).addClass('time-line-node-bottom').removeClass('time-line-node-right');
+            } else if(index % 2 == 1) {
+                $(info).addClass('time-line-node-left').removeClass('time-line-node-right');
+            }
+        });
     }
 }
 
