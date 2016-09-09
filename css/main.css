@@ -189,107 +189,119 @@ p {
     padding-bottom: 120px;
     background-color: #e4e6eb;
 }
-/*.time-line:before{*/
-    /*position: absolute;*/
-    /*content: "";*/
-    /*width: 3px;*/
-    /*height: 840px;*/
-    /*left: 50%;*/
-    /*margin-top: 70px;*/
-    /*-webkit-transform: translate(-50%,0);*/
-       /*-moz-transform: translate(-50%,0);*/
-        /*-ms-transform: translate(-50%,0);*/
-         /*-o-transform: translate(-50%,0);*/
-            /*transform: translate(-50%,0);*/
-    /*background-color: #6ee2d3;*/
-/*}*/
-.time-line-dot {
+
+.time-line:before {
     position: absolute;
-    /*width: 20px;*/
-    /*height: 20px;*/
+    content: "";
+    width: 2px;
+    height: 1400px;
     left: 50%;
-    top: 50%;
-    -webkit-border-radius: 10px; /* Safari 和 Chrome */
-       -moz-border-radius: 10px; /* Firefox */
-            border-radius: 10px;
-    -webkit-transform: translate(-50%,0);
-       -moz-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-         -o-transform: translate(-50%,0);
-            transform: translate(-50%,0);
-    /*background-color: #6ee2d3;*/
+    top: 250px;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background-color: #249251;
 }
-.time-line-info {
+
+.time-line-main {
+    margin-top: 40px;
+}
+
+.time-line-node {
     position: relative;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 154px;
+}
+
+.time-line-node p {
+    font-size: 16px;
+    color: rgb(128,128,128);
+}
+
+.time-line-node>div {
+    display: inline-block;
     width: 300px;
     vertical-align: middle;
-}
-.time-line-info h2 {
-    line-height: 20px;
-}
-.time-line-info h3{
-    padding-top: 10px;
-    color: #9b9b9b;
-}
-.time-line-info p {
-    padding-top: 20px;
-    color: #9b9b9b;
-    line-height: 23px;
-}
-.time-line-node {
-    padding-top: 70px;
+    line-height: normal;
 }
 
-.tl-info1, .tl-info3, .tl-info5{
-    left: 45%;
+.info-title {
+    margin-bottom: 20px;
+}
+
+.time-line-node h2 {
+    color: #249251;
+    font-size: 36px;
+}
+
+.time-line-node h3 {
+    color: #249251;
+    font-size: 18px;
+    margin: 14px 20px 0;
+}
+
+.time-line-node-left h2, .time-line-node-left h3 {
+    float: right;
+}
+
+.time-line-node-right h2, .time-line-node-right h3 {
+    float: left;
+}
+
+div.time-line-node-left {
+    margin-right: 50px;
     text-align: right;
-    -webkit-transform: translate(-100%,0);
-       -moz-transform: translate(-100%,0);
-        -ms-transform: translate(-100%,0);
-         -o-transform: translate(-100%,0);
-            transform: translate(-100%,0);
-}
-.tl-info2, .tl-info4 {
-    left: 55%;
-    text-align: left;
-
 }
 
-.time-line-image {
-    position: absolute;
+div.time-line-node-right {
+    margin-left: 50px;
     text-align: left;
-    vertical-align: middle;
 }
-.tl-image1 {
-    left: 55%;
+
+div.time-line-node-bottom {
+    margin-top: 120px;
 }
-.time-line-image .tl-bbs {
-    width: 120px;
-}
-.time-line-image h3 {
-    position: relative;
-    padding-left: 65px;
-    top: -40px;
-}
-.tl-image3 {
-    left: 11%;
-}
-.time-line-image .tl-table, .time-line-image .tl-build {
-    width: 128px;
-}
-.time-line-image .tl-pc {
+
+.time-line-node div.time-line-dot:before {
     position: absolute;
-    width: 64px;
-    left: 32px;
-    top: -20px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    /*margin: 8px;*/
+    background-color: #249251;
+    border-radius: 10px;
 }
-.tl-image4 {
-    left: 80%;
-}
-.life-show {
-    width: 100%;
-    background-color: #fafafa;
-    padding-bottom: 100px;
+
+.time-line-node div.time-line-dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px; /* Safari 和 Chrome */
+    -moz-border-radius: 30px; /* Firefox */
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    /*margin: 0 30px;*/
+    border: solid 2px #249251;
 }
 
 /*depart*/
@@ -569,6 +581,10 @@ h1.head-line,h2.head-line-small {
     animation-name: none;
 }
 
+.clear {
+    clear: both;
+}
+
 @media (max-width: 1200px) {
     .container {
         width: 90%;
@@ -627,29 +643,20 @@ h1.head-line,h2.head-line-small {
     .nav {
         padding-top: 20px;
     }
-    .time-line:before, .time-line-dot {
+    .time-line:before, .time-line-node div.time-line-dot {
         left: 10%;
     }
-    .time-line:before {
-        height: 780px;
-    }
+
     .time-line-node {
         width: 100%;
     }
-    .time-line-info {
-        width: 400px;
-        left: 20%;
+
+    .time-line-node div {
         text-align: left;
-        -webkit-transform: translate(0,0);
-           -moz-transform: translate(0,0);
-            -ms-transform: translate(0,0);
-             -o-transform: translate(0,0);
-                transform: translate(0,0);
+        margin-left: 0;
     }
-    .time-line-info p {
-        width: 100%;
-    }
-    .tl-image1 {
+
+    .time-line-node div.time-line-node-img {
         display: none;
     }
     .depart .icon-wrapper, .team .member-wrapper {
@@ -664,10 +671,8 @@ h1.head-line,h2.head-line-small {
     .banner p {
         margin-top: 10vh;
     }
-    .time-line:before {
-        height: 830px;
-    }
-    .time-line-info {
+    .time-line-node div.time-line-node-info {
+        left: 5%;
         width: 300px;
     }
     .join-left, .join-right {
@@ -683,12 +688,12 @@ h1.head-line,h2.head-line-small {
     .banner h1 {
         font-size: 32px;
     }
-    .time-line:before {
-        height: 1020px;
+    .time-line-node div.time-line-node-info {
+        width: 250px;
     }
-    .time-line-info {
-        left: 30%;
-        width: 170px;
+    .time-line-node:last-child h3 {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
