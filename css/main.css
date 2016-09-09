@@ -88,13 +88,7 @@ p {
     opacity: 1;
 }
 .menu li.active {
-    /*border-bottom: solid #6ee2d3 2px;*/
-    /*color: #ffffff;*/
     opacity: 1;
-    /*-webkit-transition: opacity .3s;*/
-       /*-moz-transition: opacity .3s;*/
-         /*-o-transition: opacity .3s;*/
-            /*transition: opacity .3s;*/
 }
 
 .head-block-small {
@@ -132,7 +126,7 @@ p {
 }
 .banner h1 {
     padding-top: 2vh;
-    color: #249251;
+    color: #33b768;
 }
 .banner p {
     /*margin-top: 20vh;*/
@@ -156,14 +150,14 @@ p {
     height: 50px;
     margin-left: 3vw;
     line-height: 50px;
-    border: 2px solid #249251;
+    border: 2px solid #33b768;
     border-radius: 4px;
     font-size: 18px;
-    color: #249251;
+    color: #33b768;
 }
 .wrapper-right:hover {
     transition: all 0.3s;
-    background-color: #249251;
+    background-color: #33b768;
     color: #ffffff;
 }
 
