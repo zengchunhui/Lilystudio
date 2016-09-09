@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-html, body, h1, h2, h3, h4, h5, h6, li, ul, p, a, img {
+html, body, h1, h2, h3, h4, h5, h6, li, ul, p, a, img, input {
     margin: 0;
     padding: 0;
     border: 0;
     color: #ffffff;
     font-size: 14px;
-    font-family: "Microsoft Yahei","Helvetica Neue Bold","Helvetica Neue Light",sans-serif;
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
     font-weight: 100;
     text-decoration: none;
     list-style: none;
